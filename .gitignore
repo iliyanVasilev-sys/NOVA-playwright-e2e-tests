@@ -1,0 +1,127 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+# compiled output
+dist
+tmp
+/out-tsc
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+# dependencies
+node_modules
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+# IDE - VSCode
+.vscode/*
+# Shared MCP configuration and integrity checks are committed; downloaded tools stay ignored.
+!.vscode/mcp.json
+!.vscode/endor/
+.vscode/endor/*
+!.vscode/endor/endorctl-lock.json
+!.vscode/endor/endor-findings-query.mjs
+!.vscode/endor/endor-findings-query.test.mjs
+!.vscode/endor/start-endor-mcp.mjs
+!.vscode/endor/start-endor-mcp.test.mjs
+!.vscode/endor/start-endor-remediation-mcp.mjs
+!.vscode/endor/start-endor-remediation-mcp.test.mjs
+.vscode/endor/tools/
+# misc
+# Endor CI: per-project package.json manifest (generated; do not commit)
+.endor-package-json-manifest.json
+/.sass-cache
+/connect.lock
+/coverage
+/*/**/coverage
+/libpeerconnection.log
+*.log
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+testem.log*
+lerna-debug.log*
+/typings
+/tools/scripts/personal
+# System Files
+.DS_Store
+Thumbs.db
+/*/**/node_modules
+/*/**/dist
+*.env
+/*/**/build
+/*/**/.vs
+html-report
+/*/**/.env
+/*/**/.env*
+.env*
+
+# Next.js
+.next
+/*/**/test-types
+output
+
+# yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.nx
+docker-compose.override.yaml
+# Copilot/agent customizations are allowlisted; keep unapproved customizations local.
+.github/instructions/*
+.github/prompts/*
+.github/agents/*
+.github/skills/*
+!.github/instructions/endor-labs.instructions.md
+!.github/instructions/generated-api.instructions.md
+!.github/instructions/frontend-runtime-env.instructions.md
+!.github/instructions/compose-env.instructions.md
+!.github/instructions/service-env-variables.instructions.md
+!.github/instructions/integration-tests.instructions.md
+!.github/agents/architect.agent.md
+!.github/agents/implementer.agent.md
+!.github/agents/reviewer.agent.md
+!.github/agents/test-writer.agent.md
+!.github/agents/endor-analyst.agent.md
+!.github/prompts/maintain-ai-customizations.prompt.md
+!.github/prompts/code-review.prompt.md
+!.github/prompts/task-intake.prompt.md
+!.github/prompts/plan-review.prompt.md
+!.github/prompts/report.prompt.md
+!.github/skills/endor-remediation/
+!.github/skills/endor-remediation/**
+
+# C#
+*.lscache
+/*/**/appsettings.Development.json
+
+*.nvmrc
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
+.cursor/rules/nx-rules.mdc
+
+.claude/worktrees
+
+.docker
