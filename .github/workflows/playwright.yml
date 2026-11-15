@@ -21,6 +21,8 @@ jobs:
         run: npm ci
       # - name: Install Playwright Browsers
       #   run: npx playwright install --with-deps chromium
+      - name: Install Chrome and Edge
+        run: npx playwright install chrome msedge
       - name: Run Playwright tests
         run: npx playwright test
         env:
