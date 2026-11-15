@@ -31,9 +31,8 @@ jobs:
       - name: Combine reports into one folder
         if: ${{ always() }}
         run: |
-          mkdir -p public-reports/allure public-reports/playwright
+          mkdir -p public-reports/allure
           cp -r allure-report/* public-reports/allure/ || true
-          cp -r playwright-report/* public-reports/playwright/ || true
       - name: Deploy reports to GitHub Pages
         if: ${{ always() }}
         uses: peaceiris/actions-gh-pages@v4
@@ -46,4 +45,3 @@ jobs:
         run: |
           echo "### 📊 Test Reports" >> $GITHUB_STEP_SUMMARY
           echo "- **Open Allure Report**" >> $GITHUB_STEP_SUMMARY
-          echo "- **Open Playwright Report**" >> $GITHUB_STEP_SUMMARY
